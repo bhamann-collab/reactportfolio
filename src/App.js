@@ -1,5 +1,5 @@
 import React from 'react';
-import './css/_global.scss';
+import './css/style.scss';
 import TitlePage from './components/titlePage/TitlePage'
 
 function App() {
