@@ -1,7 +1,11 @@
 import React from 'react'
 import '../../css/_global.scss';
+import typeWriter from './typeWriter'
 
 const TitlePage = () => {
+   
+    typeWriter();
+
     return (
         <>
             <div className="backgroundPicture" id="backgroundPic"> </div>
