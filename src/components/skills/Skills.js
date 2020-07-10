@@ -30,7 +30,7 @@ const images = [
 
 const Skills = () => {
     return (
-            <section className="navDirect" id="navSkills">
+        <section className="navDirect" id="navSkills">
             <h1>Skills</h1>
             <div className="headingLine"></div>
             <div className="container">
