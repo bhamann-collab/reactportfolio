@@ -1,25 +1,29 @@
 import React from 'react'
 
-const PortfolioRectangle = () => {
+const PortfolioRectangle = (props) => {
     return (
         <div className="portfolioItem">
-            <div class="titlePortfolio portfolioItem1">
-                <h2>NASA Slack generator</h2>
+            <div class={`titlePortfolio portfolioItem${props.number}`}>
+                <h2>{props.title}</h2>
             </div>
-            <p>Web application that obtains an image from space and sends it through the slack application</p>
+            <p>{props.description}</p>
             <br />
             <ul>
                 <li>
-                    <p>Front-end built using Foundation</p>
+                    <p>{props.comment1}</p>
                 </li>
                 <br />
                 <li>
-                    <p>The NASA and Slack API was used with the help of JQuery and AJAX</p>
+                    <p>{props.comment2}</p>
+                </li>
+                <br />
+                <li>
+                    <p>{props.comment3}</p>
                 </li>
             </ul>
             <div className="buttons">
-                <a href="https://borucltd.github.io/patient0/" target="_blank" className="project1">visit</a>
-                <a href="https://github.com/borucltd/patient0" target="_blank" className="project1">code</a> 
+                <a href={props.website} target="_blank" className={`project${props.number}`}>visit</a>
+                <a href={props.code} target="_blank" className={`project${props.number}`}>code</a> 
             </div>
         </div>
     )
